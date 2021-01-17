@@ -95,8 +95,8 @@
         <div style="margin:20px">
             <h2>Solution of question 5</h2>
              {% for i in data %}
-             {% if (i.company.catchPhrase.length < 16) %}
-                <h6>{{i.company.catchPhrase.length}}</h6>
+             {% if (i.company.catchPhrase.length > 15) %}
+                <h6>{{i.company.catchPhrase}}</h6>
                   {% endif %}
             {% endfor %}
         </div>
