@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Engage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <ul id="navbar">
+        <li><a href="#home"><i class="fa fa-certificate" aria-hidden="true"></i></a></li>
+        <li><a href="#Tour">Tour</a></li>
+        <li><a href="#Product">Product</a></li>
+        <li><a href="#Features">Features</a></li>
+        <li><a href="#Enterprise">Enterprise</a></li>
+        <li><a href="#Support">Support</a></li>
+        <li><a href="#Pricing">Pricing</a></li>
+        <li><a href="#Cart">Cart</a></li>
+    </ul>
+
+    <div class="container">
+        <div class="titleBox">
+            <h1>Punny headline</h1>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eius quidem repellendus aliquam molestias odit!
+            </h4>
+            <button>Coming Soon</button>
+        </div>
+        <div class="inputBox">
+            <form>
+                <label for="firstName">First Name</label><br />
+                <input type="text" id="firstName" placeholder="First Name"><br /><br />
+                <label for="lastName"> Last Name</label><br />
+                <input type="text" id="lastName" placeholder="Last Name"><br /><br />
+                <label for="email"> Email address </label><br />
+                <input type="email" id="email" placeholder="Enter Email"><br /><br />
+                <label for="phone">Phone</label><br />
+                <input type="Number" id="phone" placeholder="Phone"><br /><br />
+                <label for="Coupan">Coupan Code</label><br />
+                <input type="text" id="Coupan" placeholder="Paste Coupan COde"><br /><br />
+                <label for="Birthday">Birthday</label>
+                <input type="date" id="Birthday"><br /><br />
+            </form>
+        </div>
+    </div>
+
+    <div class="popUp model">
+        <div>
+            <div>
+                <h1>More Deals For You!</h1>
+                <p>More discounts for your flight</p>
+            </div>
+
+            <div class="coupanBox">
+                <div>
+                    <div>
+                        <small>Flat</small><br>
+                        <span>Rs.500</span> <small>Off</small>
+                    </div>
+                    <h3 class="coupan_code" id="1">
+                        MMTFLAT500
+                    </h3>
+                    <small>*Valid on Min 3 Tickets Booking</small>
+                    <button class="copyButton" id="1" onclick="handleCopy('1')">COPY CODE</button>
+                </div>
+
+                <div>
+                    <div>
+                        <small>Flat</small><br>
+                        <span>Rs.300</span> <small>Off</small>
+                    </div>
+                    <h3 class="coupan_code" id="2">
+                        FLYMMT300 <br>
+                    </h3>
+                    <small>*Valid on Min 3 Tickets Booking</small>
+                    <button class="copyButton" id="2" onclick="handleCopy('2')">COPY CODE</button>
+                </div>
+
+                <div>
+                    <div>
+                        <small>Flat</small><br>
+                        <span>Rs.150</span> <small>Off</small>
+                    </div>
+                    <h3 class="coupan_code" id="3">
+                        FLTMMT150 <br>
+                    </h3>
+                    <small>*Valid on Min 3 Tickets Booking</small>
+                    <button class="copyButton" id="3" onclick="handleCopy('3')">COPY CODE</button>
+                </div>
+
+                <div>
+                    <div>
+                        <small>UPTO</small><br>
+                        <span>Rs.2500</span> <small>Off</small>
+                    </div>
+                    <h3 class="coupan_code" id="4">
+                        MMTBEST <br>
+                    </h3>
+                    <button class="copyButton" id="4" onclick="handleCopy('4')">COPY
+                        CODE</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="popUpClose" onclick="handleClose()">X</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js">
+    </script>
+</body>
+
+</html>
