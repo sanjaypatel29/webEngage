@@ -1,6 +1,6 @@
 function handleClose() {
-    document.getElementsByClassName("popUp")
-    [0].classList.add("close")
+    var res = document.getElementsByClassName("popUp")
+    res[0].classList.add("close")
 }
 
 function handleCopy(id) {
